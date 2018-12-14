@@ -60,20 +60,20 @@ function initMap() {
             const building_id = e.features[0].properties.id;
             const info = buildings.find(b => b.id == building_id);
             
-            const t = `<tr><td>Fecha de denuncia</td><td>${info['Fecha de denuncia ']}</td></tr>`
+            const t = `<tr><td>Fecha de denuncia</td><td>${info['Fecha de denuncia']}</td></tr>`
                     + `<tr><td>Uso de Suelo</td><td>${info['Uso de Suelo']}</td></tr>`
-                    + `<tr><td>Niveles de construcción permitidos</td><td>${info['Niveles de construcción permitidos ']}</td></tr>`
+                    + `<tr><td>Niveles de construcción permitidos</td><td>${info['Niveles de construcción permitidos']}</td></tr>`
                     + `<tr><td>Superficie máxima de construcción m<sup>2</sup></td><td>${info['Superficie máxima de construcción m2']}</td></tr>`
                     + `<tr><td>Número de Niveles de Construcción</td><td>${info['Número de niveles de la construcción']}</td></tr>`
                     + `<tr><td>Número de viviendas</td><td>${info['Número de viviendas']}</td></tr>`
                     + `<tr><td>Superficie m<sup>2</sup></td><td>${info['Superficie m2']}</td></tr>`
-                    + `<tr><td>Número de árboles talados</td><td>${info['Número de árboles talados ']}</td></tr>`
+                    + `<tr><td>Número de árboles talados</td><td>${info['Número de árboles talados']}</td></tr>`
                     + `<tr><td>Fusión de Predios</td><td>${info['Fusión de Predios']}</td></tr>`
                     + `<tr><td>Afectaciones Ambientales/Barrancas</td><td>${info['Afectaciones Ambientales/Barrancas']}</td></tr>`
-                    + `<tr><td>Especificaciones</td><td>${info['Especificaciones ']}</td></tr>`
+                    + `<tr><td>Especificaciones</td><td>${info['Especificaciones']}</td></tr>`
                     + `<tr><td>Población Aproximada</td><td>${info['Población aproximada']}</td></tr>`
-                    + `<tr><td>Litros aproximados de agua por año</td><td>${info['Litros de agua ']}</td></tr>`
-                    + `<tr><td>Número aproximado de autos</td><td>${info['Número de autos por construcción ']}</td></tr>`;
+                    + `<tr><td>Litros aproximados de agua por año</td><td>${info['Litros de agua']}</td></tr>`
+                    + `<tr><td>Número aproximado de autos</td><td>${info['Número de autos por construcción']}</td></tr>`;
 
             $('#info-table tbody').html(t);
 
